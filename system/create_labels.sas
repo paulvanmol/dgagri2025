@@ -110,14 +110,13 @@ run;
 libname fadnvars xlsx "&path/fadn/fadn_variable_descriptions.xlsx"; 
 
 /*Add specific labels and formats*/
-data sumrica.yearcountryregiontf14_labels;
-set work.yearcountryregiontf14; 
+data sumrica.yearcountry_labels;
+set sumrica.yearcountry; 
 label COUNTRY="Country"
-      REGION="Region"
-	  TF14="(TF14)14 Types of Farming";
+      ;
 run; 
 %create_labels(
-dataset=sumrica.yearcountryregiontf14_labels, 
+dataset=sumrica.yearcountry_labels, 
 metadata=fadnvars.sheet1,
 name_col=variable,
 label_col=label,
