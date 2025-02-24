@@ -107,6 +107,7 @@ run;
     label_col=description
 );
 */
+/*
 libname fadnvars xlsx "&path/fadn/fadn_variable_descriptions.xlsx"; 
 
 /*Add specific labels and formats*/
@@ -121,3 +122,4 @@ metadata=fadnvars.sheet1,
 name_col=variable,
 label_col=label,
 unit_col=unit);
+*/
