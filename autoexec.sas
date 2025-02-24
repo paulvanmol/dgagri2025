@@ -6,4 +6,7 @@ options dlcreatedir fmtsearch=(work r2_fmt.formats);
 libname sumrica "&path/ricasum_n"; 
 libname nuts "&path/eumaps";
 libname R2_FMT "&path/formats"; 
-libname fadn "&path/egtask"; 
+libname fadn "&path/fadn"; 
+
+cas casauto sessopts=(caslib=casuser timeout=1800 locale="en_US");
+libname casuser cas caslib="casuser";
